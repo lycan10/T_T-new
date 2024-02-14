@@ -1,0 +1,125 @@
+.reviews{
+
+}
+.reviews-container{
+}
+.reviews-title{
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.reviews-title h1{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+}
+.reviews-button{
+    height: 30px;
+    width: 40px;
+    border: 1px solid var(--border-color);
+}
+.arrow-size{
+   
+}
+.reviews .slick-arrow {
+    display: block !important;
+    color: #888;
+    width: 20px;
+    height: 30px;
+   
+}
+.reviews .slick-arrow.slick-next{
+    position: absolute;
+    top: -2rem;
+    right: 0rem;
+}
+.reviews .slick-arrow.slick-next:hover{
+    background-color: var(--background-color1);
+    color: white;
+}
+.reviews .slick-arrow.slick-prev{
+    position: absolute;
+    top: -2rem;
+    left: 85.8%;
+}
+.reviews .slick-arrow.slick-prev:hover{
+    background-color: var(--background-color1);
+    color: white;
+}
+.reviews-slides{
+    border: 1px solid var(--border-color);
+}
+.review-details-container{
+
+}
+.review-details{
+    padding: 1rem ;
+    
+}
+.review-details p{
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    color: var(--color);
+    border-bottom: 1px solid var(--border-color);
+}
+.reviews-user-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 1rem;
+}
+.reviews-user-image{
+    width: 50px;
+    height: 50px;
+    background-color: #ecedf2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-user-image img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.reviews-user-author{
+}
+.reviews-user-author p{
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color);
+    
+}
+.reviews-user-button p{
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--background-color1); 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.review-form{
+    background-color: transparent !important;
+    padding: 1rem 1rem 2rem !important;
+}
+.review-name input{
+    border: 1px solid var(--border-color);
+}
+.review-name textarea{
+    border: 1px solid var(--border-color);
+}
+
+.modal-header {
+    border-bottom: 0;
+   
+    padding: 2rem 2rem 0;
+}
+

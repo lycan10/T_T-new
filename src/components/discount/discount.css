@@ -1,0 +1,128 @@
+.discount{
+   
+    padding: 0rem 3.5rem;
+}
+.discount-container{
+    background-color: aliceblue;
+    padding: 3rem 3rem;
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.discount-container p{
+    font-family: var(--font-family);
+    font-size: 23px;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 2px;
+}
+.discount-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color1);
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+}
+.discount-button p{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+.discount-icon{
+    color: white;
+    margin-right: 1rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .discount{
+        padding: 0rem 3rem;
+    }
+    .discount-container{
+        background-color: aliceblue;
+        padding: 3rem;
+        margin: 6rem 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .discount{
+   
+        padding: 0rem 1rem;
+    }
+    .discount-container{
+        background-color: aliceblue;
+        padding: 2rem 2rem;
+        margin: 2rem 0;
+    }
+    .discount-container p{
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+        letter-spacing: 2px;
+    }
+    .discount-button p{
+        font-family: var(--font-family);
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+    }
+    .discount-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--background-color1);
+        padding: 0.55rem 1.5rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .discount{
+   
+        padding: 0rem 1.5rem;
+    }
+    .discount-container{
+        background-color: aliceblue;
+        padding: 2rem 1rem;
+        margin: 3rem 0;
+    }
+    .discount-container p{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 600;
+        color: black;
+        letter-spacing: 1px;
+        max-width: 150px;
+    }
+    .discount-button p{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+    }
+    .discount-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color1);
+        width: 125px;
+        height: 40px;
+        cursor: pointer;
+        padding: 0;
+    }
+    .discount-icon{
+        color: white;
+        margin-right: 0.5rem;
+    }
+}

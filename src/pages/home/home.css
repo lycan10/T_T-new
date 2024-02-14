@@ -1,0 +1,15 @@
+.bestseller-spacing{
+    padding: 1rem 3.5rem;
+}
+
+@media screen and (min-width: 1500px) {
+    .home{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    .bestseller-spacing{
+        padding: 1rem 1rem;
+    }
+}

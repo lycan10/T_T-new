@@ -1,0 +1,11 @@
+.wishlist-login-message{
+    padding: 4rem 6rem;
+}
+.wishlist-login-message h1{
+    font-family: var(--font-family);
+    margin: 0;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0rem;
+    color: var(--color); 
+}

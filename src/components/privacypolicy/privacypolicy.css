@@ -1,0 +1,157 @@
+.privacy{
+
+}
+.privacy-container{
+    padding: 3rem 5rem;
+}
+.privacy-header{
+
+}
+.privacy-header h1{
+    font-family: var(--font-family);
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: black;
+}
+.privacy-header p{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 100%;
+    color: black;
+}
+.privacy-content{
+    margin-top: 1rem;
+}
+.privacy-content h3{
+    font-family: var(--font-family);
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    margin-top: 1.5rem;
+    color: black;
+}
+.privacy-content h5{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-top: 0.8rem;
+}
+.privacy-content p{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 100%;
+    color: black;
+}
+.privacy-content ul li{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .privacy-container{
+        padding: 2rem 3rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .privacy-container{
+        padding: 2rem 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .privacy-content h5{
+        font-family: var(--font-family);
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+        margin-top: 0.8rem;
+    }
+    .privacy-content h3{
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+        margin-top: 0.8rem;
+    }
+    .privacy-header h1{
+        font-family: var(--font-family);
+        font-size: 19px;
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+        color: black;
+    }
+    .privacy-header p{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 400;
+        max-width: 100%;
+        color: black;
+    }
+    .privacy-content p{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+    }
+    .privacy-content ul li{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+    }
+}
+@media screen and (max-width: 380px) {
+    .privacy-content p{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+    }
+    .privacy-content ul li{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+    }
+}
+@media screen and (max-width: 350px) {
+    .privacy-content h5{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 700;
+        color: black;
+        margin-top: 0.8rem;
+    }
+    .privacy-content h3{
+        font-family: var(--font-family);
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+        margin-top: 0.8rem;
+    }
+    .privacy-header h1{
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+        color: black;
+    }
+    .privacy-content p{
+        font-family: var(--font-family);
+        font-size: 10px;
+        font-weight: 400;
+        color: black;
+    }
+    .privacy-content ul li{
+        font-family: var(--font-family);
+        font-size: 10px;
+        font-weight: 400;
+        color: black;
+    }
+}

@@ -1,0 +1,15 @@
+.wishlistcards{
+    padding: 4rem 6rem;
+}
+.wishlistcards h1{
+    font-family: var(--font-family);
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.wishlistcardscontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}

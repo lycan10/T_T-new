@@ -1,0 +1,47 @@
+.form-new p{
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 300;
+    margin: 1rem 0 0; 
+    color: var(--color);
+}
+.form-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+.register-form-button-login{
+    background-color: var(--background-color1);
+    width: 85px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.register-form-button-login p{
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0; 
+    color: white;
+}
+.forgot-password {
+    margin-left: 0.5rem;
+}
+.forgot-password p{
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0; 
+    color: var(--color);
+    cursor: pointer;
+}
+.forgot-password p:hover{
+    color: var(--background-color1);
+}

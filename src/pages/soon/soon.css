@@ -1,0 +1,225 @@
+.soon{
+}
+.soon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 6rem;
+}
+.soon-logo{
+    width: 600px;
+    height: 400px;
+}
+.soon-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.soon-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 2rem;
+}
+.soon-text h1{
+    font-family: "Poppins";
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 33px;
+    color: var(--background-color2);
+}
+.soon-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 0 3rem;
+}
+.soon-content p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 750px;
+    text-align: center;
+    line-height: 27px;
+}
+.soon-content span{
+    font-weight: 600;
+    color: var(--background-color2);
+    font-size: 18px;
+    cursor: pointer;
+}
+.soon-contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.soon-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.soon-contact p{
+    margin-left: 0.3rem;
+    color: rgb(68, 68, 68);
+}
+.s-margin{
+    margin: 0 1rem;
+}
+.soon-socials{
+  margin-top: 3rem;
+}
+.soon-socials a{
+   text-decoration: none;
+  }
+.soon-icons{
+    font-size: 20px;
+    color: var(--background-color2); 
+}
+.soon-icons1{
+    font-size: 25px;
+    color: var(--background-color2); 
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1500px) {
+    .soon{
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .soon-container{
+        padding: 4rem;
+    }
+    .soon-logo{
+        width: 400px;
+        height: 300px;
+    }
+    .soon-logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .soon-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+    .soon-text h1{
+        font-family: "Poppins";
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 30px;
+        color: var(--background-color2);
+    }
+    .soon-contact-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        row-gap: 20px;
+    }
+    .soon-contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .soon-contact p{
+        margin-left: 0.5rem;
+        color: rgb(68, 68, 68);
+    }
+    .s-margin{
+        margin: 0 2rem;
+    }
+    .soon-socials{
+      margin-top: 3rem;
+    }
+    .soon-socials a{
+       text-decoration: none;
+      }
+    .soon-icons{
+        font-size: 20px;
+        color: var(--background-color2); 
+    }
+    .soon-icons1{
+        font-size: 25px;
+        color: var(--background-color2); 
+        margin: 0 4px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .soon-container{
+        padding: 1rem;
+    }
+    .soon-logo{
+        width: 300px;
+        height: 200px;
+    }
+    .soon-logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .soon-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 2rem 0 1rem;
+    }
+    .soon-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 0 2rem;
+    }
+    .soon-content p{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        max-width: 750px;
+        text-align: center;
+        line-height: 27px;
+    }
+    .soon-text h1{
+        font-family: "Poppins";
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 20px;
+        color: var(--background-color2);
+        text-align: center;
+    }
+    .soon-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .soon-contact p{
+        margin-left: 0rem;
+        margin-top: 6px;
+        color: rgb(68, 68, 68);
+        font-size: 14px;
+    }
+    .soon-socials{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+   
+}
+

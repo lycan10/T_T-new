@@ -1,0 +1,52 @@
+.homecoming-container{
+    padding: 3rem 0 2rem !important;
+}
+
+.homeconing-image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 400px;
+   height: 300px;
+}
+.homeconing-image img{
+    width: 100%;
+    height: 100%;
+}
+.homeconing-content{
+    margin-bottom: 0rem;
+}
+@media screen and (max-width: 800px) {
+    .homecoming-container{
+        padding: 3rem 1rem 2rem !important;
+    }
+    .homeconing-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 200px;
+     }
+     .homeconing-content p{
+        max-width: 600px;
+    }
+    .homecoming-text{
+        margin-bottom: 1rem 
+    }
+    .homecoming-text h1{
+        font-size: 23px;
+       
+    }
+}
+@media screen and (max-width: 500px) {
+    .homecoming-container{
+        padding: 3rem 1rem 2rem !important;
+    }
+    .homeconing-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+     }
+}

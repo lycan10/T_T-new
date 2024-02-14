@@ -1,0 +1,180 @@
+.homereviews{
+
+}
+.homereview-title{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homereview-title h1{
+    font-family: var(--font-family);
+    margin: 0;
+    font-size: 27px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.driver-review-container{
+    padding: 2rem 2.5rem;
+}
+.driver-review-space{
+    margin: 0rem;
+    padding: 2rem 0;
+    
+}
+.driver-reviews{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0 1rem;
+    padding: 3rem 0;
+    height: 280px;
+}
+.driver-review-image{
+    width: 75px;
+    height: 75px;
+    
+}
+.driver-review-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.driver-review-text{
+    margin: 2rem 0;
+}
+.driver-review-text p{
+    font-family: var(--font-family);
+    margin: 0;
+    font-size: 14px;
+    max-width: 300px !important;
+    color: var(--color);
+    text-align: center;
+    line-height: 23px;
+}
+.driver-review-name{
+    font-family: var(--font-family);
+    margin: 0;
+    font-size: 13px;
+
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .homereview-title{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .homereview-title h1{
+        font-family: var(--font-family);
+        margin: 0;
+        font-size: 29px;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+    .driver-review-container{
+        padding: 2rem;
+    }
+    .driver-reviews{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 0 0.5rem;
+        padding: 2rem 1rem;
+        height: 300px;
+    }
+    .driver-review-text p{
+        font-family: var(--font-family);
+        margin: 0;
+        font-size: 14px;
+        max-width: 300px !important;
+        text-align: center;
+        line-height: 23px;
+    }
+    .driver-review-text{
+        margin: 1.5rem 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .homereview-title{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .homereview-title h1{
+        font-family: var(--font-family);
+        margin: 0;
+        font-size: 23px;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+    .driver-review-container{
+        padding: 0rem 0.5rem;
+    }
+    .driver-review-text p{
+        font-family: var(--font-family);
+        margin: 0;
+        font-size: 12px;
+        max-width: 200px !important;
+        text-align: center;
+        line-height: 23px;
+    }
+    .driver-reviews{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 0 0.5rem;
+        padding: 3rem 0;
+    }
+ 
+}
+@media screen and (max-width: 500px) {
+    .homereview-title{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .homereview-title h1{
+        font-family: var(--font-family);
+        margin: 0;
+        font-size: 19px;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+    .driver-review-container{
+        padding: 0rem 0.5rem;
+    }
+    .driver-review-text p{
+        font-family: var(--font-family);
+        margin: 0;
+        font-size: 15px;
+        max-width: 300px !important;
+        text-align: center;
+        line-height: 23px;
+    }
+    .driver-reviews{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 0 0.5rem;
+        padding: 3rem 0;
+    }
+ 
+}
