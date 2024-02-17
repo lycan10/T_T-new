@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
-import image from "../../assets/about-2.jpg";
+import image from "../../assets/abt1.png";
+import image2 from "../../assets/abt3.png";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import mission from "../../assets/goal.png";
@@ -53,11 +54,8 @@ const About = () => {
         <div className="aboutpage-content-container">
           <div
             className="aboutpage-content-image"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
           >
-            <img src={image} alt="" />
+            <img src={image2} alt="" />
           </div>
           <div className="aboutpage-content">
             <div

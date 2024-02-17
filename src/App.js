@@ -31,7 +31,12 @@ import TermsOfService from "./components/termsOfService/TermsOfService.jsx";
 import Deals from "./pages/deals/Deals.jsx";
 import { Link } from "react-router-dom";
 
+
+
 function App() {
+
+
+
   const [state, dispatch] = useReducer(
     (prevState, action) => {
       switch (action.type) {
@@ -122,6 +127,8 @@ function App() {
     authContext.fetchWishlist();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+ 
 
   // const authContext = useMemo(
   //   () => ({
@@ -242,7 +249,7 @@ function App() {
           <Modal.Title>Please Login</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>You need to log in to access the wishlist.</p>
+          <p>Please Log in.</p>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={authContext.closeModal}>

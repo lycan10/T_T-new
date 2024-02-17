@@ -1,5 +1,5 @@
 .homereviews{
-
+    margin-top: 4rem;
 }
 .homereview-title{
     display: flex !important;
@@ -105,6 +105,9 @@
     }
 }
 @media screen and (max-width: 800px) {
+    .homereviews{
+        margin-top: 3rem;
+    }
     .homereview-title{
         display: flex !important;
         flex-direction: column;
@@ -142,6 +145,9 @@
  
 }
 @media screen and (max-width: 500px) {
+    .homereviews{
+        margin-top: 2rem;
+    }
     .homereview-title{
         display: flex !important;
         flex-direction: column;

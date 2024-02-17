@@ -37,7 +37,7 @@ import list from "../../assets/list-bullets.svg";
 import ListCard from "../../constant/listCard/ListCard";
 import strapi from "../../functions/strapi";
 
-import ReactGA from "react-ga";
+
 import { useLocation } from "react-router-dom";
 import TopDeals from "../../components/topdeals/TopDeals";
 import { useStrapi } from "../../hooks/useStrapi";
@@ -50,9 +50,6 @@ const Deals = () => {
 
   const location = useLocation();
 
-  useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
 
   const { loading, data, error } = useStrapi("topdeals", {
     "populate[product][populate][0]": "img",
@@ -144,37 +141,37 @@ const Deals = () => {
     : data.data;
 
   const handleClose = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked close modal",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked close modal",
+    //   label: "Product Page",
+    // });
     setActiveModal(null);
   };
 
   const handleShowModal = (modalId) => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on open modal",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on open modal",
+    //   label: "Product Page",
+    // });
     setActiveModal(modalId);
   };
 
   const handleIncrease = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on quantity increase",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on quantity increase",
+    //   label: "Product Page",
+    // });
     setValue(value + 1);
   };
   const handleDecrease = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on quantity decrease",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on quantity decrease",
+    //   label: "Product Page",
+    // });
     if (value > 1) {
       setValue(value - 1);
     } else {
@@ -204,11 +201,11 @@ const Deals = () => {
   };
 
   const handlePriceFilter = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on price filter",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on price filter",
+    //   label: "Product Page",
+    // });
     // Ensure filteredProducts is an array
     const productsArray = Array.isArray(filteredProducts)
       ? filteredProducts
@@ -232,11 +229,11 @@ const Deals = () => {
   };
 
   const handleRemovePriceFilter = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on remove price filter",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on remove price filter",
+    //   label: "Product Page",
+    // });
 
     setMinPrice("");
     setMaxPrice("");
@@ -262,11 +259,11 @@ const Deals = () => {
   };
 
   const toggleSection = (subCategory, event) => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on toggle",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on toggle",
+    //   label: "Product Page",
+    // });
     if (displaySection === "main" || displaySection === "subs") {
       setDisplaySection("subs");
       setSelectedSubcategory(subCategory);

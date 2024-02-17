@@ -38,7 +38,7 @@ import list from "../../assets/list-bullets.svg";
 import ListCard from "../../constant/listCard/ListCard";
 import strapi from "../../functions/strapi";
 
-import ReactGA from "react-ga";
+
 import { useLocation } from "react-router-dom";
 import { useStrapi } from "../../hooks/useStrapi";
 import Loader from "../../components/loader/Loader";
@@ -50,9 +50,7 @@ const Products = () => {
 
   const location = useLocation();
 
-  useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+
 
   const { loading, data, error } = useStrapi("products", {
     // "fields[0]": "category",
@@ -146,37 +144,37 @@ const Products = () => {
     : goodData;
 
   const handleClose = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked close modal",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked close modal",
+    //   label: "Product Page",
+    // });
     setActiveModal(null);
   };
 
   const handleShowModal = (modalId) => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on open modal",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on open modal",
+    //   label: "Product Page",
+    // });
     setActiveModal(modalId);
   };
 
   const handleIncrease = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on quantity increase",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on quantity increase",
+    //   label: "Product Page",
+    // });
     setValue(value + 1);
   };
   const handleDecrease = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on quantity decrease",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on quantity decrease",
+    //   label: "Product Page",
+    // });
     if (value > 1) {
       setValue(value - 1);
     } else {
@@ -206,11 +204,11 @@ const Products = () => {
   };
 
   const handlePriceFilter = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on price filter",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on price filter",
+    //   label: "Product Page",
+    // });
     // Ensure filteredProducts is an array
     const productsArray = Array.isArray(filteredProducts)
       ? filteredProducts
@@ -234,11 +232,11 @@ const Products = () => {
   };
 
   const handleRemovePriceFilter = () => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on remove price filter",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on remove price filter",
+    //   label: "Product Page",
+    // });
 
     setMinPrice("");
     setMaxPrice("");
@@ -264,11 +262,11 @@ const Products = () => {
   };
 
   const toggleSection = (subCategory, event) => {
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on toggle",
-      label: "Product Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on toggle",
+    //   label: "Product Page",
+    // });
     if (displaySection === "main" || displaySection === "subs") {
       setDisplaySection("subs");
       setSelectedSubcategory(subCategory);
@@ -429,9 +427,7 @@ const Products = () => {
                 <div className="products-right-bestseller tops">
                   <TopDeals noPad />
                 </div>
-                <div className="products-right">
-                  <img src={ad1} alt="" />
-                </div>
+               
                 <div className="products-right-offers">
                   <div className="products-right-offers1">
                     <img src={ad4} alt="" />

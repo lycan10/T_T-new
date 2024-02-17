@@ -13,6 +13,7 @@ const BestSellerCards = ({
   id,
   img,
   description,
+  description2,
   ratings,
   brand,
   sku,
@@ -120,7 +121,7 @@ const BestSellerCards = ({
               <div className="modal-description">
                 <p>
                   <span style={{ color: "black" }}>Description: </span>
-                  {description}
+                  {description2}
                 </p>
               </div>
               <p style={{ color: "gold" }}>{ratings}</p>

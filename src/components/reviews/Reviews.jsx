@@ -14,16 +14,18 @@ import "./reviews.css";
 import useFetch from "../../hooks/useFetch";
 import strapi, { STRAPI_SERVER } from "../../functions/strapi";
 
-import ReactGA from "react-ga";
+
 import { useLocation } from "react-router-dom";
 import Loader from "../loader/Loader";
 
 const Reviews = () => {
   const location = useLocation();
 
-  useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+  // useEffect(() => {
+  //   ReactGA.pageview(location.pathname + location.search);
+  // }, [location]);
+
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -59,11 +61,11 @@ const Reviews = () => {
   const handleEmailClick = (e) => {
     setLoadingPostReview(true);
 
-    ReactGA.event({
-      category: "Button Click",
-      action: "Clicked on Submit Review",
-      label: "Reviews Page",
-    });
+    // ReactGA.event({
+    //   category: "Button Click",
+    //   action: "Clicked on Submit Review",
+    //   label: "Reviews Page",
+    // });
 
     // console.log("Submited")
 

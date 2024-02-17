@@ -241,7 +241,7 @@ padding: 1rem 1rem ;
 }
 .products-right-offers1{
     flex: 1;
-    height: 400px;
+    height: 500px;
     margin-right: 0.7rem;
 }
 .products-right-offers1 img{
@@ -251,7 +251,7 @@ padding: 1rem 1rem ;
 }
 .products-right-offers2{
     flex: 1;
-    height: 400px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -259,7 +259,7 @@ padding: 1rem 1rem ;
 
 .products-right-offers2 img{
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -474,12 +474,6 @@ tbody, td, tfoot, th, thead, tr {
     .product-right-container{
         width: 100%; 
     }
-    .products-right{
-        width: 100%;
-        background-color: red;
-        height: 400px;
-        margin-bottom: 1rem;
-    }
     .products-right-offers{
         width: 100%;
         display: flex;
@@ -501,16 +495,7 @@ tbody, td, tfoot, th, thead, tr {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-    .products-right-offers2a{
-        flex: 1;
-        background-color: gold;
-        height: 100%;
-    }
-    .products-right-offers2b{
-        flex: 1;
-        background-color: pink;
-        height: 100%;
-    }
+    
     .products-right-bestseller{
         margin-top: 0rem;
     }
@@ -574,6 +559,20 @@ tbody, td, tfoot, th, thead, tr {
     }
     .tops{
         margin-bottom: 1rem;
+    }
+    .products-right-offers2a{
+        flex: 1;
+        height: 400px;
+    }
+    .products-right-offers2b{
+        flex: 1;
+        height: 400px;
+    }
+    .products-right-offers2a img{
+        height: 400px;
+    }
+    .products-right-offers2 img{
+        height: 400px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -808,12 +807,15 @@ tbody, td, tfoot, th, thead, tr {
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
     .products-right-offers1{
         flex: 1;
         background-color: blue;
         height: 400px;
-        margin-right: 0.7rem;
+        margin-right: 0rem;
     }
     .products-right-offers2{
         flex: 1;

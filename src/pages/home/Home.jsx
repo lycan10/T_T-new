@@ -12,7 +12,7 @@ import HomeServices from '../../components/homeservices/HomeServices'
 import Discount from '../../components/discount/Discount'
 import HomeReviews from '../../components/homereviews.jsx/HomeReviews'
 
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 import { useLocation } from 'react-router-dom';
 
 import "./home.css"
@@ -22,10 +22,19 @@ import AboutImgs from '../../components/aboutimgs/AboutImgs'
 
 
 const Home = () => {
-  const location = useLocation();
-  useEffect(()=>{
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location])
+  // const location = useLocation();
+
+  // ReactGA.initialize("'G-757XGDZ579'");
+
+  // ReactGA.send({ hitType: "pageview", page: "/", title: "Home page" });
+
+  // ReactGA.set({ page: window.location.pathname });
+  // ReactGA.pageview(window.location.pathname);
+
+
+  // useEffect(()=>{
+  //   ReactGA.pageview(location.pathname + location.search);
+  // }, [location])
 
   return (
     <div className='home'>
@@ -41,7 +50,7 @@ const Home = () => {
       <NewArrivals />
       </div>
       <AboutImgs />
-      <Discount />
+      {/* <Discount /> */}
       <HomeReviews />
       <div className="bestseller-spacing">
       <TopDeals />

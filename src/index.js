@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useEffect, useReducer } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { initGA, logPageView } from "./constant/analytics"
+import GA4React from 'ga-4-react';
 
+const ga4react = new GA4React('G-757XGDZ579'); // Replace with your GA4 measurement ID
 
-initGA(); // Initialize Google Analytics
+(async () => {
+  await ga4react.initialize();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <App />
-);
-
-logPageView(); // Log initial page view
-
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+})();
